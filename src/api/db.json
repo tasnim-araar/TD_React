@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "name": "React Workshop",
+      "description": "Learn React with hands-on examples.",
+      "price": 50,
+      "nbTickets": 5,
+      "nbParticipants": 0,
+      "like": false
+    },
+    {
+      "id": "2",
+      "name": "AI Conference",
+      "description": "Explore the future of AI.",
+      "price": 100,
+      "nbTickets": 10,
+      "nbParticipants": 20,
+      "like": false
+    },
+    {
+      "id": "efbc",
+      "name": "Tasnim Araar",
+      "description": "JenkinsToken",
+      "price": "44",
+      "nbTickets": "4455",
+      "nbParticipants": 0,
+      "like": false
+    },
+    {
+      "id": "0048",
+      "name": "Tasnim Araar",
+      "description": "JenkinsToken",
+      "price": "125",
+      "nbTickets": "5",
+      "nbParticipants": 0,
+      "like": false
+    }
+  ]
+}

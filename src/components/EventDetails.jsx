@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import eventsData from "../events.json";
+import { getallEvents } from "../service/api";
 import { Container, Card } from "react-bootstrap";
 
 const EventDetails = () => {
-  const { eventName } = useParams();
+  const { id } = useParams();
+  const [event, setEvent] = useState(null);
 
-  const event = eventsData.find(
-    (e) => e.name === eventName
-  );
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/immutability
+    loadEvent();
+  }, [id]);
 
-  if (!event) return <h2 className="text-center mt-5">Event not found</h2>;
+  const loadEvent = async () => {
+    try {
+      const result = await getallEvents(id);
+      setEvent(result.data);
+    // eslint-disable-next-line no-unused-vars
+    } catch (error) {
+      setEvent(null);
+    }
+  };
+
+  if (!event) {
+    return <h2 className="text-center mt-5">Event does not exist</h2>;
+  }
 
   return (
     <Container className="mt-4">
