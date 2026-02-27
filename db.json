@@ -1,0 +1,24 @@
+{
+  "events": [
+    {
+      "title": "eeeeeeeee",
+      "price": "6677",
+      "nbTickets": "54",
+      "nbParticipants": 0,
+      "image": "",
+      "id": "801c",
+      "name": "Tasnim Araar",
+      "description": "JenkinsToken",
+      "img": "placeholder.jpg",
+      "like": false
+    },
+    {
+      "id": "9d05",
+      "title": "taas",
+      "price": "56336",
+      "nbTickets": "635",
+      "nbParticipants": "634",
+      "image": ""
+    }
+  ]
+}
